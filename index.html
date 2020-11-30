@@ -8,14 +8,23 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- bxsclide -->
-    <link rel="stylesheet" href="dist/bxslider/jquery.bxslider.css">
+    <!-- <link rel="stylesheet" href="dist/bxslider/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="dist/bxslider/jquery.bxslider.min.js"></script>
+    <script src="dist/bxslider/jquery.bxslider.min.js"></script> -->
+
+
+    <!-- SWIPER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="dist/swiper/swiper-bundle.min.css">
+    <script src="dist/swiper/swiper-bundle.js"></script>
+    <script src="dist/swiper/swiper-bundle.min.js"></script>
+    <!-- SWIPER -->
     
 </head>
 <body>
     <header class="container">
-        <div class="logo"><img src="assets/images/logo.png" alt=""></div>
+        <div class="logo"><div class="text-logo" style="font-size: 5em; font-family: 'Queen_Destroy';">ELIOT<br>SITE</div></div>
         <nav>
             <ul>
                 <li><a href="">tour</a></li>
@@ -26,13 +35,69 @@
         </nav>
     </header>
 
-    <div class="container slider" id="ajSlider">
+    <!-- <div class="container slider" id="ajSlider">
         <img src="assets/images/comingsoon.jpg" alt="" >
         <img src="assets/images/comingsoon2.jpg" alt="" >
         <img src="assets/images/comingsoon.jpg" alt="">
         <img src="assets/images/comingsoon2.jpg" alt="">
 
         <a></a> 
+    </div> -->
+
+    <div class="wraper-swiper">
+        <div class="swiper-container container">
+            
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/images/comingsoon.jpg" alt="" ></div>
+                <div class="swiper-slide"><img src="assets/images/comingsoon2.jpg" alt="" ></div>
+                <div class="swiper-slide"><img src="assets/images/comingsoon.jpg" alt="" ></div>
+                <div class="swiper-slide"><img src="assets/images/comingsoon2.jpg" alt="" ></div>
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <div class="wraper-swiper">
+        <div class="swiper-container-video swiper-container container">
+            
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><iframe id="player0" src="https://www.youtube.com/embed/waE1U01kwxY" frameborder="0" allowfullscreen iframe-video></iframe></div>
+                <div class="swiper-slide"><img src="assets/images/comingsoon2.jpg" alt="" ></div>
+                <div class="swiper-slide"><img src="assets/images/comingsoon.jpg" alt="" ></div>
+                <div class="swiper-slide"><img src="assets/images/comingsoon2.jpg" alt="" ></div>
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination swiper-video-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev swiper-video-button-prev"></div>
+            <div class="swiper-button-next swiper-video-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar swiper-video-scrollbar"></div>
+        </div>
+    </div>   
+
+    <div class="schedule container">
+        <img src="assets/images/schedule.png" alt="">
+    </div>
+
+    <footer>some footer ¯\_(ツ)_/¯</footer>
+
 </body>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </html>
